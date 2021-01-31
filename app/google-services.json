@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801802203613",
+    "project_id": "lmhv---food-ordering",
+    "storage_bucket": "lmhv---food-ordering.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801802203613:android:477d19ad6ba2a07ebf4634",
+        "android_client_info": {
+          "package_name": "com.lmhvteam.lmhv_foodordering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801802203613-rfs4klrs4r9t9cljuseo5r16hlo9bkkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5Z_kJNaXfkiJQYAewq9OP4N-pBJRvn5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801802203613-rfs4klrs4r9t9cljuseo5r16hlo9bkkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
