@@ -15,6 +15,7 @@
       android:background="@drawable/customborder"
       android:onClick="Logout"
       android:text="Logout"
+      android:textAllCaps="false"
       app:backgroundTint="#B9050B"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"

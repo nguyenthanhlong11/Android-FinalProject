@@ -16,6 +16,8 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 
 public class Profile extends AppCompatActivity {
     TextView username, phone;
@@ -38,12 +40,20 @@ public class Profile extends AppCompatActivity {
 
         userId = fAuth.getCurrentUser().getUid();
 
-        DocumentReference documentReference = fStore.collection("users").document(userId);
-        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+//        DocumentReference documentReference = fStore.collection("users").document(userId);
+//        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+//            @Override
+//            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+//                phone.setText(value.getString("phone"));
+//                username.setText(value.getString("username"));
+//            }
+//        });
+
+        Query getOrderHistories = fStore.collection("order").whereEqualTo("idUser",userId);
+        getOrderHistories.addSnapshotListener(this, new EventListener<QuerySnapshot>() {
             @Override
-            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                phone.setText(value.getString("phone"));
-                username.setText(value.getString("username"));
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+
             }
         });
     }

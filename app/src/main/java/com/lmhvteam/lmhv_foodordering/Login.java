@@ -67,7 +67,7 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this, "Login successfully!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),Profile.class));
+                            startActivity(new Intent(getApplicationContext(), Home.class));
                         } else {
                             Toast.makeText(Login.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -79,6 +79,11 @@ public class Login extends AppCompatActivity {
 
     public void registerScreen(View view) {
         Intent intent = new Intent(this,Register.class);
+        startActivity(intent);
+    }
+
+    public void forgotPasswordScreen(View view) {
+        Intent intent = new Intent(this,ForgotPassword.class);
         startActivity(intent);
     }
 }

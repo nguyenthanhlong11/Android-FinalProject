@@ -3,16 +3,19 @@ package com.lmhvteam.lmhv_foodordering;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 
-public class Home extends AppCompatActivity {
+public class detail_foods extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_detail_foods);
+    }
+
+    public void addToCart(View view) {
     }
 }
