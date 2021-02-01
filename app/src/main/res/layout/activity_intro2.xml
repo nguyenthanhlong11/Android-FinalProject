@@ -33,35 +33,34 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="322dp"
-        android:layout_height="133dp"
-        android:fontFamily="@font/adamina"
+        android:layout_width="317dp"
+        android:layout_height="125dp"
+        android:fontFamily="@font/gabriela"
         android:text="Tết này, hãy để chúng tôi giúp bạn tạo thêm không khí Tết bằng các món ăn với công thức dân gian"
         android:textColor="#908D88"
         android:textSize="60px"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        app:layout_constraintVertical_bias="0.813" />
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="115dp"
-        android:layout_height="54dp"
-        android:background="#00000000"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
         android:backgroundTint="#DB1033"
         android:onClick="loginScreen"
         android:text="Next"
         android:textAllCaps="false"
-        android:textColor="#908D88"
+        android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+        android:textColor="#EAB1B9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintVertical_bias="0.976" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
